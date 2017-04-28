@@ -66,6 +66,7 @@ body {
     bottom:40px;
 }
 .center {
+    top:40px;
     left: 0;
     right: 0;
     margin: auto;
@@ -93,7 +94,7 @@ body {
 }
 
 .section .myInfo {
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: block;
     top: 140px;
 }
@@ -109,7 +110,7 @@ body {
 }
 
 .section .mySkills {
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: inline-block;
     left: 0;
     right:0;
@@ -151,4 +152,18 @@ body {
     overflow:hidden;
     text-align:right;
     padding-right: 10px;
+}
+
+.section.contact .skill.sns {
+    margin: 40px;
+    width: inherit;
+    text-align:center;
+}
+
+.section.contact .skill.sns span {
+    font-size:0.8em;
+}
+
+.section.contact .myInfo {
+    margin-top: 20px;
 }
