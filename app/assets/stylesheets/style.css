@@ -1,0 +1,154 @@
+/*reset css*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    margin:0;
+    padding:0;
+}
+li {
+    list-style-type: none;
+}
+
+/*custom css*/
+body {
+    background-image: url(home_bg2.png);
+    background-size: cover;
+    padding:22px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*.homeBoxInner {*/
+/*    opacity:0;*/
+/*}*/
+
+.homeBox {
+    border:1px solid #fff;
+    text-align:center;
+    color:white;
+    position: relative;
+}
+
+.homeTitle {
+    margin:146px auto;
+    font-size: 5em;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.homeTitle .line {
+    line-height: 0.1;
+    font-size:1.2em;
+    vertical-align: top;
+}
+
+.homeBox .homeMenu {
+    position: absolute;
+    font-size: 1.8em;
+    font-weight: 100;
+    cursor:pointer;
+    z-index: 3;
+}
+.homeBox .homeMenu.left {
+    left: 40px;
+}
+.homeBox .homeMenu.right {
+    right:40px;
+}
+.homeBox .homeMenu.top {
+    top:40px;
+}
+.homeBox .homeMenu.bottom {
+    bottom:40px;
+}
+.center {
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size:3.2em;
+    font-weight: 300;
+    display: none;
+}
+.large {
+    font-size:3.2em;
+    font-weight: 300;
+}
+
+/*section css*/
+.section {
+    display:none;
+    color: #fff;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    text-align:center;
+    width: 100%;
+    height: 100%;
+    font-weight: 100;
+}
+
+.section .myInfo {
+    font-size: 1.8em;
+    display: block;
+    top: 140px;
+}
+
+.section li {
+    margin: 16px 0;
+}
+
+.section .mySkills .skillTitle {
+    font-weight: 100;
+    margin:10px;
+    font-size: 1.6em;
+}
+
+.section .mySkills {
+    font-size: 1.8em;
+    display: inline-block;
+    left: 0;
+    right:0;
+    margin: auto;
+    margin-top: 360px;
+}
+
+.section .skill {
+    margin-top:10px;
+    margin: 10px 0px 0px 40px;
+    display: inline-block;
+    width: 320px;
+    text-align:left;
+}
+
+.section .back {
+    position: absolute;
+    left: 50px;
+    top: 300px;
+}
+.section .myInfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.skill .skillItem {
+    margin: 24px 0;
+}
+
+.skill .start {
+    margin-left: 10px;
+    display: inline-block;
+    width: 0px;
+    background-color:rgba(255,255,255,0.3);
+    border-left: 1px #fff solid;
+    font-size: 0.5em;
+    line-height: 2;
+    overflow:hidden;
+    text-align:right;
+    padding-right: 10px;
+}
