@@ -13,9 +13,9 @@ $(document).ready(function(){
     var data = [
         { 'tool': 'Photoshop',   'skill': 150, 'margin':15, 'percent': 100 },
         { 'tool': 'Illustrator', 'skill': 140, 'percent': 100 },
-        { 'tool': 'Sketch',    'skill': 100, 'margin':65, 'percent':50  },
+        { 'tool': 'Sketch',    'skill': 100, 'margin':65, 'percent':58  },
         { 'tool': 'Html5', 'skill': 140, 'margin':16, 'percent':90 },
-        { 'tool': 'Css3',  'skill': 130, 'margin':35, 'percent':80 },
+        { 'tool': 'Css3',  'skill': 130, 'margin':32, 'percent':80 },
         { 'tool': 'jQuery', 'skill': 100, 'percent':50 },
     ];
     
@@ -33,7 +33,7 @@ $(document).ready(function(){
             $(this).css({'margin-left': data[index].margin+'px'})
             $(this).delay(1000).delay(50*index).animate({'width':data[index].percent + 50 + 'px'},
             {duration: 700, step: function( now) {
-            $(this).text( Math.round(now - 50) + '%' );
+            $(this).text( Math.abs(Math.round(now - 50)) + '%' );
             }});
         });
         
@@ -45,7 +45,13 @@ $(document).ready(function(){
             },{duration:2000});
         });
         
-        $('.nameInner').each(function(index){
+        $('.resumeTop .nameInner').delay(800).each(function(index){
+            $(this).delay(500*index).animate({
+                'opacity':'1'
+            },{duration:1000});
+        });
+        
+        $('.nameInner.resumeBottom').delay(800).each(function(index){
             $(this).delay(500*index).animate({
                 'opacity':'1'
             },{duration:1000});
