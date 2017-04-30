@@ -1,5 +1,13 @@
 /*global $*/
 $(document).ready(function(){
+    //opeing event
+    $('.homeTitle').delay(400).animate({'opacity':'1'},{duration:1000});
+    $('.homeMenu').each(function(index){
+        $(this).delay(450*index).animate({
+            'opacity': '1'
+        },{duration:800});
+    });
+    
     var mItem = $('.homeMenu');
     
     // menu hover event
@@ -48,13 +56,13 @@ $(document).ready(function(){
         $('.resumeTop .nameInner').delay(800).each(function(index){
             $(this).delay(500*index).animate({
                 'opacity':'1'
-            },{duration:1000});
+            },{duration:800});
         });
         
         $('.nameInner.resumeBottom').delay(800).each(function(index){
             $(this).delay(500*index).animate({
                 'opacity':'1'
-            },{duration:1000});
+            },{duration:800});
         });
         
         $('.line').delay(500).each(function(index){
